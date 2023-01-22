@@ -7,7 +7,7 @@ public class Aufgabe07 {
 		
 		Sparvertrag[] vertrag = sparvertrag.getVertragArray();
 		NormSparvertrag v = (NormSparvertrag) vertrag[0];
-		v.addZins(0);
-		
+		v.addZins(8);
+		System.out.println(v.getGuthaben());
 		}
 }

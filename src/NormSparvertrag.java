@@ -16,9 +16,9 @@ public class NormSparvertrag extends Sparvertrag implements Zinsen{
 	
 	public void addZins(int dauer) {
 		if(dauer <= 3) {
-			this.guthaben = (guthaben * this.ZINS1/100 + guthaben);
+			this.guthaben = ((this.guthaben * ZINS1/100) * dauer + this.guthaben);
 		} else {
-			this.guthaben = (guthaben * this.ZINS2/100 + guthaben);
+			this.guthaben = ((this.guthaben * ZINS2/100) * dauer + this.guthaben);
 		}
 	}
 }

@@ -25,8 +25,10 @@ public class BankSparvertraege {
 			
 			if(art.equals("VertragPlus")) {
 				vertragArray[freierplatz] = new VertragPlus(sparer,guthaben);
+				break;
 			} else if (art.equals("NormSparvertrag")) {
 				vertragArray[freierplatz] = new NormSparvertrag(sparer,guthaben);
+				break;
 			}
 			
 			
