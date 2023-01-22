@@ -3,6 +3,7 @@ package de.dummyapt;
 public class VertragPlus extends NormSparvertrag {
     public VertragPlus(String sparer, double guthaben) {
         super(sparer, guthaben);
+        super.setVertragTyp("VertragPlus");
     }
 
     @Override
