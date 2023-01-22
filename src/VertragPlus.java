@@ -10,10 +10,12 @@ public class VertragPlus extends NormSparvertrag {
 	public void addZins(int dauer) {
 		if(dauer < 1) {
 			dauer = 1;
+			setGuthaben(getGuthaben() * this.ZINS1/100 + getGuthaben());
 			System.out.println("Angegebene Dauer zu klein - setze automatisch auf 1");
 		} else if (dauer > 9) {
 			dauer = 9;
-			System.out.println("Angegebene Dauer zu klein - setze automatisch auf 1");
+			setGuthaben(getGuthaben() * this.ZINS1/100 + getGuthaben());
+			System.out.println("Angegebene Dauer zu groß - setze automatisch auf 9");
 		}
 	}
 	

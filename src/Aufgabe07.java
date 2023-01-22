@@ -4,6 +4,10 @@ public class Aufgabe07 {
 		BankSparvertraege sparvertrag = new BankSparvertraege("Sparkasse Bochum");
 		
 		sparvertrag.vertragHinzufuegen("Rene", 12.5, "NormSparvertrag");
-		System.out.println(sparvertrag.getVertragArray());
+		
+		Sparvertrag[] vertrag = sparvertrag.getVertragArray();
+		NormSparvertrag v = (NormSparvertrag) vertrag[0];
+		v.addZins(0);
+		
 		}
 }
